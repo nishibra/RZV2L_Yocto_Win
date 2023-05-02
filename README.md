@@ -45,6 +45,10 @@ Yoctoイメージを書き込みます。
 
 IPを確認します。
 
+6.固定IPの設定
+
+
+
 7.コマンドプロンプトの起動
 
 Windowsのコマンドプロンプトを起動します。
@@ -52,13 +56,15 @@ Windowsのコマンドプロンプトを起動します。
 8.Windows editorでPythonプログラムの作成
 
 
-9.scp class_fish_calib.py root@192.168.8.108:~root
+9.プログラムをコピー
+scp camera.py root@192.168.8.99:~root
 
 プログラムをコピーします。
 
 10.tera-termでプログラム起動
 
 SSHで接続します。プログラムを起動します。
+ssh root@192.168.8.99
 
 11.バグはWindowsで編集/転送
 
