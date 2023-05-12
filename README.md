@@ -5,8 +5,7 @@ Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1�
 ## AES-RZB-V2L-SK-G
 
 使用するボードはAvnet Engineering Services RZBoard Development Kitです。
-
-https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/rzboard-v2l/
+[Avnet Engineering Services RZBoard Development Kit](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/rzboard-v2l/)
 
 ## WindowsでのPython3+OpenCV4.1開発環境
 ### 1.tera-termのインストールと設定
