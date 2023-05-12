@@ -28,7 +28,9 @@ exeをダウンロードし実行するとインストールされます。
 GND:黒 5V:赤 RXD:白 TXD:緑
 ```
 ### 3.RZBoardの設定
-[写真]
+
+![SW_RZ-Board](/pics/sw_set.jpg)
+
 スイッチを図の通り設定します。
 
 #### 4.LANの接続
