@@ -53,7 +53,7 @@ Set Static IP(ここでは192.168.8.99にセットします。)
 
 まず設定ファイルを作成します。
 ```
-nano /etc/systemd/network/01-eth0.network
+# nano /etc/systemd/network/01-eth0.network
 ```
 以下ファイルの内容です。
 ```
@@ -75,7 +75,35 @@ Windowsのコマンドプロンプトを起動します。
 
 ### 10.Windows editorでPythonプログラムの作成
 
-
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+import cv2
+#
+def main():
+  print ('start camera')
+  cap = cv2.VideoCapture(-1)
+  cap.set(3,640)
+  cap.set(4,240)
+  cap.set(5,30)
+  cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+  
+  while (cap.isOpened()):
+    ret, data = cap.read()
+    frameHeight = data.shape[0]
+    frameWidth = data.shape[1]
+    print(frameWidth,frameHeight)
+    cv2.imshow('image',data)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+      print ("quit")
+      break
+  cap.release()
+  cv2.destroyAllWindows()
+#
+if __name__ == "__main__":
+    main()
+```
 ### 11.プログラムをRZボードにコピー
 ```
 $ scp camera.py root@192.168.8.99:~root
