@@ -2,7 +2,7 @@
 
 Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1を使いロボット開発を行います。
 
-## AES-RZB-V2L-SK-G
+### AES-RZB-V2L-SK-G
 
 使用するボードはAvnet Engineering Services RZBoard Development Kitです。
 
@@ -26,12 +26,12 @@ exeをダウンロードし実行するとインストールされます。
 GND:黒 5V:赤 RXD:白 TXD:緑
 ```
 ### 3.RZBoardの設定
-
+[写真]
 スイッチを図の通り設定します。
 
 #### 4.LANの接続
 
-LANケーブルをPCと接続します。LANを通りしてプログラムを転送します。
+LANケーブルをPCと接続します。LANを通してプログラムを転送します。
 
 ### 5.bootの書き込み
 
@@ -39,14 +39,34 @@ eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
 ### 6.avnetのyoctoイメージの書き込み
 
+[yocto image download]
 Yoctoイメージを書き込みます。
 
 ### 7.tera-termの起動/ifconfigでIP
 
 IPを確認します。
+# ifconfig
 
 ### 8.固定IPの設定
 
+Set Static IP(ここでは192.168.8.99にセットします。)
+
+まずファイルを作成します。
+```
+nano /etc/systemd/network/01-eth0.network
+```
+以下ファイルの内容です。
+```
+#01-eth0.network
+[Match]
+Name=eth0
+[Network]
+Address=192.168.8.99/24
+Gateway=192.168.8.1
+DNS=114.114.114.114
+DNS=223.6.6.6
+```
+保存して終了し、再起動するとIPが変更されます。
 
 
 ### 9.コマンドプロンプトの起動
