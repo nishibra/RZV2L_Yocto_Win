@@ -2,7 +2,7 @@
 
 Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1を使いロボット開発を行います。
 
-![001](/pics/rzboard.png)
+![RZ-Board](/pics/rzboard.jpg)
 
 ### AES-RZB-V2L-SK-G
 
