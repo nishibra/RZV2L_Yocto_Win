@@ -51,7 +51,7 @@ IPを確認します。
 
 Set Static IP(ここでは192.168.8.99にセットします。)
 
-まずファイルを作成します。
+まず設定ファイルを作成します。
 ```
 nano /etc/systemd/network/01-eth0.network
 ```
