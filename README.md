@@ -13,9 +13,9 @@ Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1�
 
 Windows PCにtera-termをインストールします。
 
-[DownLoad](https://osdn.net/projects/ttssh2/downloads/74780/teraterm-4.106.zip/)
+[Zip DownLoad](https://osdn.net/projects/ttssh2/downloads/74780/teraterm-4.106.zip/)
 
-[Imstall](https://osdn.net/projects/ttssh2/downloads/74780/teraterm-4.106.exe/)
+[Exe Download](https://osdn.net/projects/ttssh2/downloads/74780/teraterm-4.106.exe/)
 
 exeをダウンロードし実行するとインストールされます。
 
