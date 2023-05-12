@@ -2,6 +2,8 @@
 
 Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1を使いロボット開発を行います。
 
+![001](/pics/rzboard.png)
+
 ### AES-RZB-V2L-SK-G
 
 使用するボードはAvnet Engineering Services RZBoard Development Kitです。
