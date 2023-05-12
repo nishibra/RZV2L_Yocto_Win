@@ -72,8 +72,11 @@ DNS=223.6.6.6
 ### 9.コマンドプロンプトの起動
 
 Windowsのコマンドプロンプトを起動します。
+windowsシステムツールの中にコマンドプロンプトがあります。
 
 ### 10.Windows editorでPythonプログラムの作成
+
+エディターでPythonのプログラムを作成します。
 
 ```
 #!/usr/bin/env python
