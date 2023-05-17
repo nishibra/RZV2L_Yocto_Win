@@ -37,15 +37,15 @@ GND:黒 5V:赤 RXD:白 TXD:緑
 
 LANケーブルをPCと接続します。LANを通してプログラムを転送します。
 
-### 5.bootの書き込み
+### 5.bootの書き込み(購入時に書き込まれているので省略)
 
 eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
-### 6.avnetのyoctoイメージの書き込み
+### 6.yoctoイメージの書き込み
 
 以下よりyocto imageをdownloadします。
 
-[yocto image](http://www.arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic)
+[yocto image ver3.1.17](http://www.arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic)
 
 YoctoイメージをWin32DiskImagerを使ってSDカードに書き込み、RZ-Boardに挿します。
 
