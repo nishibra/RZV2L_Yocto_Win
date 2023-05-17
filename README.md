@@ -43,8 +43,11 @@ eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
 ### 6.avnetのyoctoイメージの書き込み
 
-[yocto image download](http://arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic)
-Yoctoイメージを書き込みます。
+以下よりyocto imageをdownloadします。
+
+http://arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic
+
+YoctoイメージをWin32DiskImagerを使ってSDカードに書き込みます。
 
 ### 7.tera-termの起動/ifconfigでIP
 
