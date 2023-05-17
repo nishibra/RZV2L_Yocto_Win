@@ -45,7 +45,7 @@ eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
 以下よりyocto imageをdownloadします。
 
-arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic
+[a](arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic)
 
 YoctoイメージをWin32DiskImagerを使ってSDカードに書き込みます。
 
