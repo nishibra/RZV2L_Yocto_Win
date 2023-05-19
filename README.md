@@ -1,6 +1,6 @@
 # RZV2L_Yocto_Win
 
-Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1を使いロボット開発を行います。
+RZV2L boardを使用し、Python3+OpenCV4.1を組み込んだYocto-LinuxとWindows開発環境で使いロボットの開発を行います。
 
 
 ### AES-RZB-V2L-SK-G
@@ -8,6 +8,7 @@ Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1�
 使用するボードはAvnet Engineering Services RZBoard Development Kitです。
 
 [Avnet Engineering Services RZBoard Development Kit](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/rzboard-v2l/)
+
 
 ![RZ-Board](/pics/rzboard.jpg)
 
@@ -49,7 +50,7 @@ eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
 [yocto image ver3.1.17](http://www.arrc.jp/auto/avnet-core-image-rzboard-20230509230035.rootfs.wic)
 
-YoctoイメージをWin32DiskImagerを使ってSDカードに書き込み、RZ-Boardに挿します。
+YoctoイメージをeMMCに書き込むか、またはWin32DiskImagerなどを使ってSDカードに書き込み、いずれかでRZ-Boardを起動します。
 
 ### 7.tera-termの起動/ifconfigでIP
 
