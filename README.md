@@ -2,13 +2,15 @@
 
 Yocto-LinuxのRZV2L boardを使用したWindows開発環境でPython3+OpenCV4.1を使いロボット開発を行います。
 
-![RZ-Board](/pics/rzboard.jpg)
 
 ### AES-RZB-V2L-SK-G
 
 使用するボードはAvnet Engineering Services RZBoard Development Kitです。
 
 [Avnet Engineering Services RZBoard Development Kit](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/rzboard-v2l/)
+
+![RZ-Board](/pics/rzboard.jpg)
+
 
 ## WindowsでのPython3+OpenCV4.1開発環境
 ### 1.tera-termのインストールと設定
@@ -33,11 +35,11 @@ GND:黒 5V:赤 RXD:白 TXD:緑
 
 スイッチを図の通り設定します。
 
-#### 4.LANの接続
+#### 4.LANの接続(購入時に書き込まれているので省略可)
 
 LANケーブルをPCと接続します。LANを通してプログラムを転送します。
 
-### 5.bootの書き込み(購入時に書き込まれているので省略)
+### 5.bootの書き込み(購入時に書き込まれているので省略可)
 
 eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
@@ -51,16 +53,18 @@ YoctoイメージをWin32DiskImagerを使ってSDカードに書き込み、RZ-B
 
 ### 7.tera-termの起動/ifconfigでIP
 
-IPを確認します。
+LANケーブルをWindows PCと同じルーターに接続します。
+
+以下を入力しIPアドレスを確認します。
 ```
 $ ifconfig
 ```
 
 ### 8.固定IPの設定
 
-有線LanのStatic IP(ここでは192.168.8.99にセットします。)をセットします。
+有線LanのStatic IP(ここでは192.168.8.99とします。)をセットします。
 
-まず設定ファイルを作成します。
+まずLANの設定ファイルを作成します。
 ```
 # nano /etc/systemd/network/01-eth0.network
 ```
@@ -78,12 +82,8 @@ DNS=223.6.6.6
 保存して終了し、再起動するとIPが変更されます。
 ifconfigで確認できます。
 
-### 9.コマンドプロンプトの起動
 
-Windowsのコマンドプロンプトを起動します。
-windowsシステムツールの中にコマンドプロンプトがあります。
-
-### 10.Windows editorでPython3プログラムの作成
+### 9.Windows editorでPython3プログラムの作成
 
 エディターでPython3のプログラムを作成します。
 rz_workなどと作業ディレクトリーを作成しプログラムを保存します。
@@ -117,30 +117,36 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-### 11.プログラムをRZボードにコピー
+
+### 10.コマンドプロンプトでプログラムをRZボードに転送
+
+Windowsのコマンドプロンプトを起動します。(windowsシステムツールの中にコマンドプロンプトがあります。)
+
+scpコマンドで作成したcamera.pyをRZボードに転送します。
+
 ```
 $ scp camera.py root@192.168.8.99:~root
+# ls
 ```
-を実行し、PC側からRZへプログラムをコピーします。
+コピーされているかを確認します。
 
-
-### 12.tera-termでプログラム起動
+### 11.tera-termでプログラムを実行
 
 以下でプログラムを実行します。
 ```
 # python3 camera.py
 ```
-RZに接続したDisplayにカメラ画像が表示されます。
+RZ-ボードに接続したHDMI Displayにカメラ画像が表示されます。
 
-### 13.コマンドプロンプトからSSHで接続
+### 12.コマンドプロンプトからSSHで接続
 
 SSHで接続します。
 ```
 $ ssh root@192.168.8.99
 ```
-デバック用シリアルケーブルは不要でネットで開発が可能となります。
+SSHで接続することでデバック用シリアルケーブルは不要です。ネットでの開発が可能となります。
 
-### 14.デバッグはWindowsで編集/転送
+### 13.デバッグはWindowsで編集/転送
 
-バグ修正は8以降を繰り返します。
+バグ修正は9以降を繰り返します。
 
