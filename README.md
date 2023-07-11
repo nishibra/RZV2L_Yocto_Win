@@ -158,3 +158,22 @@ SSHで接続することでデバック用シリアルケーブルは不要で�
 ```
 /cam/rz_stereo_color_detection.py
 ```
+
+### 15.SSHFSでRZ-Boradをディスクに。
+
+SSHFSを使用するとRZ-Boradをディスクのように扱えます。
+
+#### install WinFsp
+```
+winget install WinFsp.WinFsp
+winget install SSHFS-Win.SSHFS-Win
+```
+
+#### sshfs-win-manager
+```
+https://github.com/evsar3/sshfs-win-manager/releases/tag/v1.3.1
+```
+#### 秀丸editor
+```
+https://hide.maruo.co.jp/software/hidemaru.html
+```
