@@ -52,6 +52,9 @@ eMMCにLinuxを書き込む前にブートローダーを書き込みます。
 
 YoctoイメージをeMMCに書き込むか、またはWin32DiskImagerなどを使ってSDカードに書き込み、いずれかでRZ-Boardを起動します。
 
+>download: 
+[RZ ROBO-KEN image zip file](http://www.arrc.jp/auto/RZ_img230715.zip)
+
 ### 7.tera-termの起動/ifconfigでIP
 
 LANケーブルをWindows PCと同じルーターに接続します。
