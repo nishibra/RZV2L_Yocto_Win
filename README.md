@@ -9,6 +9,8 @@ RZV2L boardを使用し、Python3+OpenCV4.1を組み込んだYocto-LinuxとWindo
 
 [Avnet Engineering Services RZBoard Development Kit](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/rzboard-v2l/)
 
+[国内販売サイト](https://www.avnet.com/shop/japan/products/avnet-engineering-services/aes-rzb-v2l-sk-g-3074457345653329668?krypto=ll76r3UIweKFGvXrZzNflwBn0vJx654zAORqscW6KaGEVSCB0W9%2FrGwzvo%2FeN174i7VOF7zVLnRgR390KjCqBGSks7Z9JEJbYwKyPMS0o74%3D)
+
 
 ![RZ-Board](/pics/rzboard.jpg)
 
